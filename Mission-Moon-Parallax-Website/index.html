@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mission Moon</title>
+</head>
+<body>
+    
+    <section>
+        <img src="parallaxbg.png" id="bg">
+        <img src="moon.png" id="rocket">
+        <img src="spaceship.png" id="spaceship">
+        <img src="mountain.png" id="mountain">
+        <img src="roadparallax.png" id="road">
+        <img src="human.png" id="human">
+        <h2 id="text">Mission Moon</h2>
+    </section>
+    <div class="paragraph">
+        <h1>Book Your Space Shuttle With Us</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat voluptas facere repudiandae quas eum modi accusantium id doloribus maiores eligendi, cupiditate assumenda animi recusandae incidunt consequatur, quia officia atque, rerum quod tempore odit accusamus ipsam labore! Eaque maiores hic porro nisi nihil doloribus dolorum quasi iste sint, quos dolores veritatis repellat beatae. Doloribus debitis autem ducimus non, nobis repudiandae atque natus voluptatibus error voluptas! Ducimus dolore quia qui quibusdam? Dolor harum laboriosam ab dolorum suscipit incidunt fuga, atque officiis consequatur, nesciunt quidem modi? Vero voluptatibus accusantium placeat at optio voluptatum, corrupti incidunt sit ipsam laborum officia pariatur iusto et. Repellendus eius facilis magnam. Illo dolorum temporibus molestiae soluta deleniti earum, accusamus corrupti, autem magni eos excepturi molestias iusto, beatae quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, cum sequi quibusdam illo perspiciatis temporibus alias placeat provident iste voluptates corporis porro, earum excepturi? Vero provident at numquam reprehenderit, reiciendis facilis eveniet cupiditate ab eos? Autem, placeat quaerat. Corrupti eveniet iste magni illo maxime illum voluptate unde magnam ex, doloribus, obcaecati sapiente repellat rem minima neque possimus voluptates tenetur explicabo et? Beatae, nisi? Sunt eaque deserunt libero laboriosam commodi placeat reiciendis itaque incidunt ipsum ratione, asperiores suscipit! Ad libero ut accusantium ipsa, molestias, commodi magnam aspernatur voluptates deleniti architecto aperiam consectetur. Harum ipsa debitis optio reprehenderit odit ducimus, repellat voluptates reiciendis nulla eius exercitationem sapiente porro, blanditiis adipisci numquam cum soluta accusantium dolorum temporibus error eaque. Beatae pariatur consequuntur dolorem cum voluptas unde quibusdam accusamus voluptatibus eos et assumenda accusantium quisquam, voluptatum quas amet eius laudantium odio labore in culpa similique vel. Fugiat sit alias maiores dolorum, unde blanditiis in excepturi porro labore fugit, eius quos consequuntur nulla ad omnis praesentium animi sint, quo facere iure aut libero? Eos consequuntur eaque possimus iste accusantium quisquam provident mollitia, nihil error voluptates libero, modi deserunt ipsam adipisci quia similique veritatis. Mollitia quos, rerum aliquam sunt accusantium magni explicabo nobis consectetur? Totam, quia.
+    </div>
+    <script type="text/javascript">
+    let bg =document.getElementById('bg');
+    let rocket =document.getElementById('rocket');
+    let mountain =document.getElementById('mountain');
+    let road =document.getElementById('road');
+    let text =document.getElementById('text');
+    let spaceship =document.getElementById('spaceship');
+    let human =document.getElementById('human');
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        bg.style.top = value *0.5 + 'px';
+        rocket.style.left = -value *0.5 + 'px';
+        mountain.style.top = -value *0.15 + 'px';
+        road.style.top = value *0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+        spaceship.style.left = value * 0.5 + 'px';
+        human.style.bottom = value *0.15 + 'px';
+    })
+    </script>
+</body>
+</html>
