@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Bookyberg Tech Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="tel" id="number-label">Number</label>
+                <input type="tel" min="0" max="10" id="tel" placeholder="Enter Your Number" name="tel" required>
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">FUll Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Do you enjoy working with us?</p>
+                <label>
+                    <input type="radio" name="choose" value="yes">Yes
+                    <input type="radio" name="choose" value="no">No
+                </label>
+            </div>
+            <div class="form-group services">
+                <p>What are the services you opted for?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="web-development">
+                    Web Development
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="app-development">
+                    App Development
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="uiux-development">
+                    UI/UX Development
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="graphic-design">
+                    Graphic Design
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="digital-marketing">
+                    Digital Marketing
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                    <textarea name="" id="" cols="50" rows="8" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
