@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #00385f;
+}
+.hide {
+  display: none;
+}
+.textCenter {
+  text-align: center;
+}
+header {
+  background-color: #f5c512;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.logo {
+  width: 200px;
+  height: 64px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #00385f;
+}
+nav ul li a {
+  color: #00385f;
+}
+.heroSection {
+  background: linear-gradient(202.06deg, #f2c917 14.42%, #ffb800 77.68%);
+  padding-top: 100px;
+}
+.container {
+  display: flex;
+  padding: 40px 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.container > * {
+  flex: 1;
+}
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heroLeft h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 57px;
+  color: #00385f;
+  margin: 10px 0;
+  width: 100%;
+}
+.heroLeft p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+  margin: 10px 0;
+}
+.heroLeft a {
+  padding: 15px 40px;
+  background-color: #28e4c9;
+  color: #00385f;
+  border-radius: 16px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.heroRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroRight img {
+  width: 90%;
+  margin: 0 auto;
+}
+.bodySection {
+  display: flex;
+  padding: 50px 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.bodySection > * {
+  flex: 1;
+}
+.bodySectionImg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+.bodySectionText {
+  margin: 20px 40px;
+}
+
+.bodySectionText hr {
+  width: 131px;
+  border: none;
+  border-radius: 50px;
+  color: #ffc800;
+  background-color: #ffc800;
+  height: 4px;
+}
+.bodySectionText p {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.teamSection {
+  background: linear-gradient(202.06deg, #f2c917 14.42%, #ffb800 77.68%);
+}
+.teamContainer {
+  padding: 40px 60px 0 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.teamContainer .teamText hr {
+  width: 131px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  height: 4px;
+}
+.teamContainer .teamText p {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+  margin: 20px 0;
+  text-align: justify;
+}
+.teamImg {
+  margin-top: 50px;
+}
+.teamImg img {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+.testimonialSection {
+  padding: 50px 40px 0 40px;
+}
+.testimonialSectionHeading {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.testimonialSectionHeading hr {
+  width: 131px;
+  border: none;
+  border-radius: 50px;
+  color: #ffc800;
+  background-color: #ffc800;
+  height: 4px;
+}
+
+.testimonialWrapper {
+  display: flex;
+  margin: 80px auto;
+  max-width: 1500px;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.testimonial img {
+  display: flex;
+  margin: 0 auto;
+  width: 130px;
+}
+.testimonial p {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+  text-align: left;
+}
+.contactSection {
+  background-color: #f4f4f4;
+  padding: 5rem 0;
+}
+
+.contactContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+
+.contactContainer hr {
+  width: 131px;
+  border: none;
+  border-radius: 50px;
+  color: #ffc800;
+  background-color: #ffc800;
+  height: 4px;
+}
+.contactContent {
+  display: flex;
+  margin-top: 40px;
+}
+.contactContent > * {
+  flex: 1;
+}
+.contactText p {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #00385f;
+  margin: 20px 0;
+}
+.contactText input {
+  padding: 14px 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff9e;
+  color: #474a57;
+  font-family: "Montserrat", sans-serif;
+  width: 248px;
+}
+::placeholder {
+  color: #00385f;
+}
+.contactText button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #f2c917;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.contactText textarea {
+  border: none;
+  background-color: #ffffff9e;
+  color: #474a57;
+  font-family: "Montserrat", sans-serif;
+  padding: 14px 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 336px;
+}
+.inputBtn {
+  display: flex;
+}
+.contactImg img {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+footer {
+  background: linear-gradient(202.06deg, #f2c917 14.42%, #ffb800 77.68%);
+}
+.footerContainer {
+  padding: 30px 60px 0 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.footerLogo {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+.footerHr {
+  background-color: #00385f;
+  height: 1px;
+  border: none;
+  opacity: 0.3;
+}
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.bottomFooter p {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+.iconBox i {
+  padding: 5px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #fcc317;
+}
+.menuIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .bodySection {
+    padding: 50px 20px;
+  }
+  .testimonialWrapper {
+    flex-direction: column;
+  }
+  .testimonial {
+    margin: 10px 0;
+  }
+  .contactContainer {
+    padding: 0 2rem;
+  }
+  .contactContent {
+    flex-direction: column-reverse;
+  }
+  .contactText {
+    margin-top: 20px;
+  }
+  .menuIcon {
+    display: block;
+    color: #fff;
+  }
+  nav {
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .navMobile {
+    display: block;
+    position: absolute;
+    top: 90px;
+    background: #fcc317;
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+    border: 2px solid #00000021;
+    z-index: 2;
+    padding: 20px 0;
+    left: 0;
+  }
+}
+.navMobile ul {
+  flex-direction: column;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .bodySection {
+    flex-direction: column;
+  }
+  .headercontainer {
+    padding: 20px;
+  }
+
+  .testimonialSectionHeading {
+    width: 100%;
+  }
+  .contactImg img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .bodySectionImg img {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .footerContainer {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .headercontainer img {
+    width: 152px;
+    height: 50px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .heroRight img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .heroLeft {
+    margin-top: 20px;
+  }
+  .bodySection {
+    padding: 20px;
+  }
+  .bodySectionImg img {
+    width: 230px;
+    height: 145px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .bodySection hr {
+    display: none;
+  }
+  .bodySectionText p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .h3Mobile {
+    font-size: 36px;
+    text-align: left;
+    line-height: 45px;
+  }
+  .teamContainer {
+    padding: 20px;
+  }
+  .teamText p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .teamImg img {
+    width: 100%;
+  }
+  .testimonialSection {
+    padding: 20px;
+  }
+  .contactContainer {
+    padding: 20px;
+  }
+  .contactText textarea {
+    width: 100%;
+  }
+  .footerContainer nav {
+    display: none;
+  }
+  .bottomFooter {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottomFooter .iconBox {
+    padding: 10px 0;
+  }
+  .iconBox i {
+    padding: 10px;
+  }
+  .footerHr {
+    display: none;
+  }
+  .footerLogo {
+    width: 250px;
+  }
+}
